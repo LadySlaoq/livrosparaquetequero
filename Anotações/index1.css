@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containerproject a, h3, p{
+    color: #353535;
+    position: relative;
+}
+
+.containerproject .slide-container .slide{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 9%;
+    padding-bottom: 70px;
+}
+
+.iten .icon{
+    transition: 3s;
+}
+
+.iten .icon:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.containerproject .slide-container .slide .contentproject{
+    flex: 1 1 350px;
+}
+
+.containerproject .slide-container .slide .contentproject h3{
+font-size: 50px;
+color: #0e2a4a
+
+}
+
+.containerproject .slide-container .slide .contentproject p{
+    font-size: 30px;
+    color: #13355c;
+    width: 40%;
+    height: 10%;
+}
+
+.containerproject .slide-container .slide .contentproject .btnproject{
+    margin-top: 10px;
+    display: inline-block;
+    background: #f7f4f4;
+    color: #13355c;
+    padding: 9px 40px;
+    border-radius: 5px;
+    transition: .5s;
+    border: 2px solid #f7f4f4;
+}
+
+.containerproject .slide-container .slide .contentproject .btnproject:hover{
+    background-color: #7d90a5;
+    border: 2px #7d90a5;
+    color: #f7f4f4;
+}
+
+.containerproject .slide-container{
+    display:none;
+}
+
+.containerproject .slide-container.active{
+    display: block;
+}
+
+.containerproject .slide-container:nth-child(1) .slide{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+main.iten{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    justify-content: center;
+}
+
+main.iten section.itens .icon{
+    width: 150px;
+    height: 200px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+main.iten section.itens img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+main.iten section.itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+@media(max-width: 600px){
+     main.iten{
+        display: flex;
+        flex-direction: column;
+     }
+}
